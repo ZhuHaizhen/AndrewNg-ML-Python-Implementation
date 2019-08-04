@@ -23,9 +23,9 @@ def read_fa(in_file):
     return fasta
 
 
-print('This short script will reformat a multi-line fasta file into a single-line one.')
-
 if __name__ == '__main__':
+    print('This short script reformats a multi-line fasta file into a single-line one.')
+
     parser = argparse.ArgumentParser()
     parser.add_argument('--input', '-i', type=str, help='path of the input fasta file')
     parser.add_argument('--output', '-o', type=str, help='path of the output fasta file')
