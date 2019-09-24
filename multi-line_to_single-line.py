@@ -2,7 +2,6 @@
 # encoding: utf-8
 """
 @author: zhuhz
-@contact: 875078992@qq.com
 @file: multi-line_to_single-line.py
 @time: 2019/8/1 22:05
 """
