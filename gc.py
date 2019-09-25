@@ -2,7 +2,6 @@
 # encoding: utf-8
 """
 @author: zhuhz
-@contact: 875078992@qq.com
 @file: gc.py
 @time: 2019/8/3 20:07
 """
