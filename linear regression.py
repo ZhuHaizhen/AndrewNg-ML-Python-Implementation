@@ -65,3 +65,19 @@ plt.legend(loc=4)
 plt.xlabel('Profit in $ 10,000s')
 plt.ylabel('Population of City in 10,000s')
 plt.show()
+
+theta0_vals = np.linspace(-10, 10, 100)
+theta1_vals = np.linspace(-1, 4, 100)
+j_vals = np.zeros((100, 100))
+
+for i in range(100):
+    for j in range(100):
+        t = np.array([[theta0_vals[i]], [theta1_vals[j]]])
+        j_vals[i, j] = compute_cost(x0_mat, y0, t)
+
+plt.subplot(111)
+plt.contour(theta0_vals, theta1_vals, j_vals.T, np.logspace(-2, 3, 20))
+plt.xlabel(r'$\theta_0$')
+plt.ylabel(r'$\theta_1$')
+plt.plot(theta1[0, 0], theta1[1, 0], color='r', marker='x')
+plt.show()
