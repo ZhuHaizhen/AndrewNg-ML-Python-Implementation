@@ -2,7 +2,7 @@
 # encoding: utf-8
 """
 @author: zhuhz
-@file: linear regression.py
+@file: linear_regression.py
 @time: 2019/9/23 21:04
 """
 
@@ -34,7 +34,7 @@ x0_mat = np.hstack((np.ones((m, 1)), x0))
 
 
 def compute_cost(x_mat, y, theta):
-    j = 1 / (2 * np.shape(x_mat)[0]) * np.sum((x_mat.dot(theta) - y) ** 2)
+    j = 1 / 2 * np.shape(x_mat)[0] * np.sum((x_mat.dot(theta) - y) ** 2)
     return j
 
 
