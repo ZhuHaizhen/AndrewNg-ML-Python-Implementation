@@ -1,1 +1,1 @@
-# learn-python
+# Exercises of Andrew Ng's machine learning course implemented using Python 3.7
